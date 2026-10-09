@@ -1,7 +1,7 @@
 :root{
   --navy:#0B2545; --blue:#5BB5F0; --sky:#9BD8F8; --sun:#D8B36A; --green:#77B895; --red:#D98278;
-  --bg:#111614; --bg-alt:#181E1B; --fg:#EDF1EC; --card:#1C2320; --muted:#A3AEA6; --line:#303A34;
-  --hero-fg:#EDF1EC; --hero-muted:#A3AEA6;
+  --bg:#111614; --bg-alt:#181E1B; --fg:#EDF1EC; --card:#1C2320; --muted:#CDD6D0; --line:#303A34;
+  --hero-fg:#EDF1EC; --hero-muted:#CDD6D0;
   --ok-bg:#20372A; --ok-fg:#B4DCC0; --bad-bg:#3B2825; --bad-fg:#E8B1A8; --wait-bg:#382F20; --wait-fg:#E3CA91; --info-bg:#1E3340; --info-fg:#A9DDF9;
   --f-display:"Archivo", sans-serif;
   --f-body:"DM Sans", sans-serif;
@@ -59,9 +59,9 @@ a{color:inherit}
 @media (max-width:860px){.nav-links{display:none}.nav-in .btn{margin-left:auto}}
 
 /* Hero */
-.hero{background:var(--bg-alt);color:var(--fg);padding:88px 0 96px;position:relative;overflow:hidden}
-.hero::before{content:none}
-.hero-grid{position:relative;display:block}
+.hero{background:var(--bg-alt) url("fondoarranque.jpeg") center/cover no-repeat;color:var(--fg);padding:88px 0 96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(8,12,10,.80)}
+.hero-grid{position:relative;z-index:1;display:block}
 .hero-copy{max-width:900px;margin-inline:auto;text-align:center}
 .hero h1{font-size:56px;font-weight:700;max-width:30ch;margin:0 auto 26px}
 .hero-problem,.hero-product{display:block}
@@ -118,6 +118,10 @@ a{color:inherit}
 .status-pending::before{background:var(--sun)!important}
 .status-accepted::before{background:var(--green)!important}
 .status-declined::before{background:var(--red)!important}
+#panel{position:relative;background:var(--bg-alt) url("fondo2.jpg") center/cover no-repeat}
+#panel::before{content:"";position:absolute;inset:0;background:rgba(8,12,10,.80)}
+#panel>.wrap{position:relative;z-index:1}
+.hero-copy h1,.hero-copy .lead,#panel h2,#panel p,#panel .status-list li{ text-shadow:0 1px 3px rgba(0,0,0,.45)}
 .team-overview{margin-top:56px;max-width:760px}
 .team-overview h3{font-size:26px;margin-bottom:12px}
 .team-overview p{color:var(--muted);font-size:18px}
