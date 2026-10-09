@@ -130,8 +130,8 @@ a{color:inherit}
 .cta p{color:#D5E0E2;font-size:19px}
 .foot{padding:28px 0;background:var(--bg)}
 .foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:16px}
-.small-brand{color:var(--fg);font-size:18px}
-.small-brand svg{width:28px;height:28px}
+.small-brand{color:var(--fg);font-size:20px}
+.small-brand img{width:36px;height:36px}
 .small-brand b{color:var(--blue)}
 
 @media (max-width:680px){
